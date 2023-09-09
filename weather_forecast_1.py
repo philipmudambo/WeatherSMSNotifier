@@ -37,7 +37,7 @@ def get_weather():
     # Send the weather information via SMS
     send_sms(message)
 
-# Schedule the weather update to be sent every day at 23:00
+# Schedule the weather update to be at a scheduled time
 schedule.every().day.at("13:56").do(get_weather)
 
 # Main loop to keep the script running
